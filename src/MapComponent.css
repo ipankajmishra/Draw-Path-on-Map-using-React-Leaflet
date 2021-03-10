@@ -1,0 +1,9 @@
+#mapid{
+    width: 35.1vw;
+    margin-left: -15px !important;
+    border-radius:0px 0px 36px 0px !important;  
+}
+
+.leaflet-container.leaflet-touch-drag.leaflet-touch-zoom{
+    border-radius:0px 0px 36px 0px !important;  
+}

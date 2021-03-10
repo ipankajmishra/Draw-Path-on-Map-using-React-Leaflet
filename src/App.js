@@ -1,25 +1,35 @@
 import logo from './logo.svg';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+// import { Polyline } from 'leaflet';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+
+
+import React, { Component } from 'react'
+import MapComponent from './MapComponent';
+import RouteComponent from './RouteComponent';
+import { Button } from 'react-bootstrap';
+// const limeOptions = { color: 'red' }
+//   const center = [51.505, -0.09]
+
+  // const polyline = [
+  //   [51.505, -0.09],
+  //   [51.51, -0.1],
+  //   [51.51, -0.12],
+  // ]
+export default class App extends Component {
+  
+  render() {
+    return (
+      <div className="App">
+        { <Button style={{float:"left", marginTop:"10px", marginLeft:"20px"}} className="home-button">
+                    Home
+                  </Button>}
+        <RouteComponent/>
+        {/* <MapComponent/> */}
+      </div>
+    )
+  }
 }
 
-export default App;
