@@ -1,13 +1,10 @@
-import logo from './logo.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-// import { Polyline } from 'leaflet';
 
 
 
 
 import React, { Component } from 'react'
-import MapComponent from './MapComponent';
 import RouteComponent from './RouteComponent';
 import { Button } from 'react-bootstrap';
 // const limeOptions = { color: 'red' }

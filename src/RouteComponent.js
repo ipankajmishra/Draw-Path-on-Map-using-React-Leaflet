@@ -23,11 +23,13 @@ export default class RouteComponent extends Component {
 
   onShowRoute=()=>{
     let polyline = [];
+    // eslint-disable-next-line
     this.state.cordinatesArray.map(data=>{
         let arr = [];
         arr.push(parseFloat(data.lat));
         arr.push(parseFloat(data.lon))
         polyline.push(arr);
+        
     })
     this.setState({
         polyline
@@ -35,17 +37,17 @@ export default class RouteComponent extends Component {
   }
 
   onChange=(e,key)=>{
-    if(key==1){
+    if(key===1){
         this.setState({
             currentCity:e.target.value
         })
     }
-    else if(key==2){
+    else if(key===2){
         this.setState({
             currentLat:e.target.value
         })
     }
-    else if(key==3){
+    else if(key===3){
         this.setState({
             currentLong:e.target.value
         })

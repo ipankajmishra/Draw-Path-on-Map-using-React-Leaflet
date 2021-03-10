@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { MapContainer, TileLayer, Marker, Popup,Map ,Polyline} from 'react-leaflet'
+import { MapContainer, TileLayer, Polyline} from 'react-leaflet'
 import "./MapComponent.css"
 export default class MapComponent extends Component {
     constructor(props){
@@ -31,7 +31,7 @@ export default class MapComponent extends Component {
      />
      
      <Polyline pathOptions={this.state.limeOptions} positions={this.state.polyline} />
-   </MapContainer>,
+   </MapContainer>
      </div>
         )
     }
