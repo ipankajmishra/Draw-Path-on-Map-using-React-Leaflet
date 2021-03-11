@@ -117,14 +117,14 @@ export default class RouteComponent extends Component {
         <div className="main-component content">
           <div style={{ height: "15vh" }}>
             <Row style={{ marginRight: "30px", marginLeft: "30px" }}>
-              <Col xs={2} className="">
+              <Col xs={2} style={{marginRight:"20px"}} className="">
                 <div style={{ marginTop: "40px" }}>
                   <label className="input-label">Location Name</label>
                   <br></br>
                   <input className="input-custom" value={this.state.currentCity} onChange={(e=>this.onChange(e,1))} placeholder="Location" />
                 </div>
               </Col>
-              <Col xs={2} className="">
+              <Col xs={2} style={{marginRight:"20px"}} className="">
                 <div style={{ marginTop: "40px" }}>
                   <label className="input-label">Enter Lattitude</label>
                   <br></br>
@@ -138,7 +138,7 @@ export default class RouteComponent extends Component {
                   <input className="input-custom" value={this.state.currentLong} onChange={(e=>this.onChange(e,3))} placeholder="Lon" />
                 </div>
               </Col>
-              <Col xs={2}></Col>
+              <Col xs={1}></Col>
               <Col xs={4}>
                 <div style={{ marginTop: "70px" }}>
                   {!this.state.enableSubmit &&  <Button className="submit-button-disable" variant="primary">
